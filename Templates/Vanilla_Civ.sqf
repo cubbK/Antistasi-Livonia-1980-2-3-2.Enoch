@@ -1,47 +1,31 @@
 
 civVehCommonData = [
-	"C_Quadbike_01_F", 0.3
-	,"C_Hatchback_01_F", 2.0
-	,"C_Hatchback_01_sport_F", 0.3
-	,"C_Offroad_01_F", 2.0
-	,"C_SUV_01_F", 1.0
-	,"C_Van_02_vehicle_F", 1.0				// van from Orange
-	,"C_Van_02_transport_F", 0.2			// minibus
-	,"C_Offroad_02_unarmed_F", 0.5			// Apex 4WD
-	,"C_Offroad_01_comms_F", 0.1			// Contact
-	,"C_Offroad_01_covered_F", 0.1
+	"gm_gc_dp_p601", 0.3,
+	"gm_gc_pol_p601", 0.3,
+	"gm_gc_civ_p601", 0.3,
+	"gm_ge_civ_typ1200", 0.3,
+	"gm_ge_civ_u1300L", 3
 ];
 
 civVehRepairData = [
-	"C_Offroad_01_repair_F", 0.3
-	,"C_Van_02_service_F", 0.3				// orange
-	,"C_Truck_02_box_F", 0.1				// repair zamak
+	"gm_ge_dbp_typ1200", 0.1,
+	"gm_ge_ff_typ1200", 0.1,
+	"gm_ge_civ_u1300L", 0.7
 ];
 
 civVehMedicalData = [
-	"C_Van_02_medevac_F", 0.1				// Orange
+	"gm_gc_ff_p601", 0.1
 ];
 
 civVehRefuelData = [
-	"C_Van_01_fuel_F", 0.2
-	,"C_Truck_02_fuel_F", 0.1
+	"gm_ge_civ_u1300l", 0.7
 ];
 
 civVehIndustrialData = [
-	"C_Van_01_transport_F", 1.0
-	,"C_Van_01_box_F", 0.8
-	,"C_Truck_02_transport_F", 0.5
-	,"C_Truck_02_covered_F", 0.5
-	,"C_Tractor_01_F", 0.3					// Contact
+	"C_Tractor_01_F", 0.3
 ];
 
 civBoatData = [
-	"C_Boat_Civil_01_rescue_F", 0.1			// motorboats
-	,"C_Boat_Civil_01_police_F", 0.1
-	,"C_Boat_Civil_01_F", 1.0
-	,"C_Rubberboat", 1.0					// rescue boat
-	,"C_Boat_Transport_02_F", 1.0			// RHIB
-	,"C_Scooter_Transport_01_F", 0.5		// jetski
-//rhsgref_civ_canoe
+	"C_Boat_Transport_02_F", 1.0
 ];
 
