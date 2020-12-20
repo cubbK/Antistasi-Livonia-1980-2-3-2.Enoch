@@ -46,50 +46,50 @@ vehNATOPVP = ["B_MRAP_01_F","B_MRAP_01_hmg_F","B_Quadbike_01_F"];
 //             UNITS             ///
 ////////////////////////////////////
 //Military Units
-NATOGrunt = "B_W_Soldier_F";
-NATOOfficer = "B_W_Officer_F";
-NATOOfficer2 = "B_G_officer_F";
-NATOBodyG = "B_W_Soldier_TL_F";
-NATOCrew = "B_W_Crew_F";
+NATOGrunt = "gm_ge_army_rifleman_g3a3_80_ols"; // Rifleman
+NATOOfficer = "gm_ge_army_officer_p1_80_oli";
+NATOOfficer2 = "gm_ge_army_officer_p1_parka_80_ols";
+NATOBodyG = "gm_ge_army_squadleader_g3a3_p2a1_80_ols"; //teamleader
+NATOCrew = "gm_ge_army_crew_mp2a1_80_oli";
 NATOUnarmed = "B_W_Survivor_F";
-NATOMarksman = "B_W_soldier_M_F";
-staticCrewOccupants = "B_W_Soldier_F";
-NATOPilot = "B_W_Helipilot_F";
+NATOMarksman = "gm_ge_army_marksman_g3a3_80_ols";
+staticCrewOccupants = "gm_ge_army_rifleman_g3a3_80_ols";
+NATOPilot = "gm_ge_army_crew_mp2a1_80_oli";
 
 //Militia Units
 if (gameMode != 4) then
 	{
-	FIARifleman = "B_W_Soldier_F";
-	FIAMarksman = "B_W_soldier_M_F";
+	FIARifleman = "gm_ge_army_rifleman_g3a3_80_ols"; 
+	FIAMarksman = "gm_ge_army_marksman_g3a3_80_ols"; //marksman
 	};
 
 //Police Units
-policeOfficer = "B_GEN_Commander_F";
-policeGrunt = "B_GEN_Soldier_F";
+policeOfficer = "gm_ge_army_militarypolice_p1_80_oli";
+policeGrunt = "gm_ge_army_militarypolice_p1_80_oli";
 
 ////////////////////////////////////
 //            GROUPS             ///
 ////////////////////////////////////
 //Military Groups
 //Teams
-groupsNATOSentry = ["B_W_Soldier_GL_F",NATOGrunt];
-groupsNATOSniper = ["B_sniper_F","B_W_Soldier_SL_F"];
-groupsNATOsmall = [groupsNATOSentry,groupsNATOSniper,["B_W_soldier_M_F","B_W_Officer_F"]];
+groupsNATOSentry = ["gm_ge_army_grenadier_g3a3_80_ols",NATOGrunt];
+groupsNATOSniper = ["gm_ge_army_marksman_g3a3_80_ols","gm_ge_army_squadleader_g3a3_p2a1_80_ols"];
+groupsNATOsmall = [groupsNATOSentry,groupsNATOSniper,["gm_ge_army_rifleman_g3a3_80_ols","gm_ge_army_officer_p1_80_oli"]];
 //Fireteams
-groupsNATOAA = ["B_W_Soldier_TL_F","B_W_Soldier_AA_F","B_W_Soldier_AA_F","B_W_Soldier_AAA_F"];
-groupsNATOAT = ["B_W_Soldier_TL_F","B_W_Soldier_AT_F","B_W_Soldier_AT_F","B_W_Soldier_AAT_F"];
-groupsNATOmid = [["B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_GL_F","B_W_Soldier_LAT2_F"],groupsNATOAA,groupsNATOAT];
+groupsNATOAA = ["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_antitank_g3a3_pzf84_80_ols","gm_ge_army_antitank_g3a3_pzf84_80_ols","gm_ge_army_antitank_assistant_g3a3_pzf84_80_ols"];
+groupsNATOAT = ["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_antitank_g3a3_pzf44_80_ols","gm_ge_army_antitank_g3a3_pzf44_80_ols","gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols"];
+groupsNATOmid = [["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_grenadier_g3a3_80_ols","gm_ge_army_demolition_g3a4_80_ols"],groupsNATOAA,groupsNATOAT];
 //Squads
-NATOSquad = ["B_W_Soldier_SL_F",NATOGrunt,"B_W_Soldier_LAT2_F",NATOMarksman,"B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_A_F","B_W_Medic_F"];
-NATOSpecOp = ["B_CTRG_Soldier_TL_tna_F","B_CTRG_Soldier_M_tna_F",NATOBodyG,"B_CTRG_Soldier_LAT_tna_F","B_CTRG_Soldier_JTAC_tna_F","B_CTRG_Soldier_Exp_tna_F","B_CTRG_Soldier_AR_tna_F","B_CTRG_Soldier_Medic_tna_F"];
+NATOSquad = ["gm_ge_army_squadleader_g3a3_p2a1_80_ols",NATOGrunt,"gm_ge_army_demolition_g3a4_80_ols",NATOMarksman,"gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols","gm_ge_army_medic_g3a3_80_ols"];
+NATOSpecOp = ["gm_ge_army_squadleader_g3a3_p2a1_80_ols","gm_ge_army_antitank_g3a3_milan_80_ols",NATOBodyG,"gm_ge_army_engineer_g3a4_80_ols","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_mg3_80_ols","gm_ge_army_rifleman_g3a3_80_ols","gm_ge_army_medic_g3a3_80_ols"];
 groupsNATOSquad =
 	[
 	NATOSquad,
-	["B_W_Soldier_SL_F",NATOGrunt,"B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_A_F","B_W_Soldier_LAT2_F","B_W_Soldier_LAT2_F","B_W_Medic_F"],
-	["B_W_Soldier_SL_F",NATOGrunt,"B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_A_F","B_W_Soldier_LAT_F","B_W_Soldier_LAT_F","B_W_Medic_F"],
-	["B_W_Soldier_SL_F",NATOGrunt,"B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_A_F","B_W_Soldier_AA_F","B_W_Soldier_AAA_F","B_W_Medic_F"],
-	["B_W_Soldier_SL_F",NATOGrunt,"B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_A_F","B_W_Soldier_AT_F","B_W_Soldier_AAT_F","B_W_Medic_F"],
-	["B_W_Soldier_SL_F",NATOGrunt,"B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_A_F","B_W_Engineer_F","B_W_Engineer_F","B_W_Medic_F"]
+	["gm_ge_army_squadleader_g3a3_p2a1_80_ols",NATOGrunt,"gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols","gm_ge_army_demolition_g3a4_80_ols","gm_ge_army_demolition_g3a4_80_ols","gm_ge_army_medic_g3a3_80_ols"],
+	["gm_ge_army_squadleader_g3a3_p2a1_80_ols",NATOGrunt,"gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols","B_W_Soldier_LAT_F","B_W_Soldier_LAT_F","gm_ge_army_medic_g3a3_80_ols"],
+	["gm_ge_army_squadleader_g3a3_p2a1_80_ols",NATOGrunt,"gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols","gm_ge_army_antitank_g3a3_pzf84_80_ols","gm_ge_army_antitank_assistant_g3a3_pzf84_80_ols","gm_ge_army_medic_g3a3_80_ols"],
+	["gm_ge_army_squadleader_g3a3_p2a1_80_ols",NATOGrunt,"gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols","gm_ge_army_antitank_g3a3_pzf44_80_ols","gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols","gm_ge_army_medic_g3a3_80_ols"],
+	["gm_ge_army_squadleader_g3a3_p2a1_80_ols",NATOGrunt,"gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols","B_W_Engineer_F","B_W_Engineer_F","gm_ge_army_medic_g3a3_80_ols"]
 	];
 
 //Militia Groups
@@ -98,23 +98,23 @@ if (gameMode != 4) then
 	//Teams
 	groupsFIASmall =
 		[
-		["B_W_Soldier_GL_F",FIARifleman],
+		["gm_ge_army_grenadier_g3a3_80_ols",FIARifleman],
 		[FIAMarksman,FIARifleman],
-		["B_W_soldier_M_F","B_W_soldier_M_F"]
+		["gm_ge_army_marksman_g3a3_80_ols","gm_ge_army_marksman_g3a3_80_ols"]
 		];
 	//Fireteams
 	groupsFIAMid =
 		[
-		["B_W_Soldier_TL_F","B_W_Soldier_GL_F","B_W_Soldier_AR_F","B_W_soldier_M_F"],
-		["B_W_Soldier_TL_F","B_W_Soldier_GL_F","B_W_Soldier_AR_F","B_W_Soldier_LAT2_F"],
-		["B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_AAA_F","B_W_Soldier_AA_F"]
+		["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_grenadier_g3a3_80_ols","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_marksman_g3a3_80_ols"],
+		["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_grenadier_g3a3_80_ols","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_demolition_g3a4_80_ols"],
+		["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_antitank_assistant_g3a3_pzf84_80_ols","gm_ge_army_antitank_g3a3_pzf84_80_ols"]
 		];
 	//Squads
-	FIASquad = ["B_W_Soldier_TL_F","B_W_Soldier_AR_F","B_W_Soldier_GL_F","B_W_Officer_F","B_W_Officer_F","B_W_soldier_M_F","B_W_Soldier_LAT2_F","B_W_Medic_F"];
+	FIASquad = ["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_grenadier_g3a3_80_ols","gm_ge_army_officer_p1_80_oli","gm_ge_army_officer_p1_80_oli","gm_ge_army_marksman_g3a3_80_ols","gm_ge_army_demolition_g3a4_80_ols","gm_ge_army_medic_g3a3_80_ols"];
 	groupsFIASquad =
 		[
 		FIASquad,
-		["B_W_Soldier_TL_F","B_W_Support_AMG_F","B_W_Soldier_GL_F","B_W_Officer_F","B_W_Support_MG_F","B_W_soldier_M_F","B_W_Soldier_LAT2_F","B_W_Medic_F"]
+		["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_rifleman_g3a3_80_ols","gm_ge_army_grenadier_g3a3_80_ols","gm_ge_army_officer_p1_80_oli","gm_ge_army_rifleman_g3a3_80_ols","gm_ge_army_marksman_g3a3_80_ols","gm_ge_army_demolition_g3a4_80_ols","gm_ge_army_medic_g3a3_80_ols"]
 		];
 	};
 
