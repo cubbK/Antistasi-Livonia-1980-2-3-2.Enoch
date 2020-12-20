@@ -2,7 +2,7 @@
 //       NAMES AND FLAGS         ///
 ////////////////////////////////////
 //Name Used for notifications
-nameInvaders = "SSSR";
+nameInvaders = "East Germany";
 
 //SF Faction
 factionMaleInvaders = "OPF_R_F";
@@ -115,17 +115,17 @@ if (gameMode == 4) then
 ////////////////////////////////////
 //Military Vehicles
 //Lite
-vehCSATBike = "O_Quadbike_01_F";
-vehCSATLightArmed = ["O_MRAP_02_hmg_F","O_MRAP_02_gmg_F"];
-vehCSATLightUnarmed = ["O_MRAP_02_F"];
-vehCSATTrucks = ["O_Truck_03_transport_F","O_Truck_03_covered_F"];
-vehCSATAmmoTruck = "O_Truck_03_ammo_F";
-vehCSATRepairTruck = "O_Truck_03_repair_F";
+vehCSATBike = "gm_gc_army_p601";
+vehCSATLightArmed = ["gm_gc_army_brdm2","gm_gc_army_btr60pb"];
+vehCSATLightUnarmed = ["gm_gc_army_btr60pa"];
+vehCSATTrucks = ["gm_gc_army_ural4320_cargo","gm_gc_army_ural4320_cargo"];
+vehCSATAmmoTruck = "gm_gc_army_ural4320_reammo";
+vehCSATRepairTruck = "gm_gc_army_ural4320_repair";
 vehCSATLight = vehCSATLightArmed + vehCSATLightUnarmed;
 //Armored
-vehCSATAPC = ["O_APC_Wheeled_02_rcws_v2_F","O_APC_Tracked_02_cannon_F"];
-vehCSATTank = "O_MBT_02_cannon_F";
-vehCSATAA = "O_APC_Tracked_02_AA_F";
+vehCSATAPC = ["gm_gc_army_bmp1sp2","gm_gc_army_pt76b"];
+vehCSATTank = "gm_gc_army_t55a";
+vehCSATAA = "gm_gc_army_zsu234v1";
 vehCSATAttack = vehCSATAPC + [vehCSATTank];
 //Boats
 vehCSATBoat = "O_Boat_Armed_01_hmg_F";
@@ -143,18 +143,18 @@ vehCSATAttackHelis = ["O_Heli_Attack_02_dynamicLoadout_F","O_Heli_Attack_02_F"];
 vehCSATUAV = "O_UAV_02_F";
 vehCSATUAVSmall = "O_UAV_01_F";
 //Artillery
-vehCSATMRLS = "O_MBT_02_arty_F";
+vehCSATMRLS = "gm_gc_army_t55am2";
 vehCSATMRLSMags = "32Rnd_155mm_Mo_shells";
 //Combined Arrays
-vehCSATNormal = vehCSATLight + vehCSATTrucks + [vehCSATAmmoTruck, vehCSATRepairTruck, "O_Truck_03_fuel_F", "O_Truck_03_medical_F"];
+vehCSATNormal = vehCSATLight + vehCSATTrucks + [vehCSATAmmoTruck, vehCSATRepairTruck, "gm_gc_army_ural375d_refuel", "gm_gc_army_ural375d_medic"];
 vehCSATAir = vehCSATTransportHelis + vehCSATAttackHelis + [vehCSATPlane,vehCSATPlaneAA] + vehCSATTransportPlanes;
 
 //Militia Vehicles
 if (gameMode == 4) then
 	{
-	vehFIAArmedCar = "O_MRAP_02_hmg_F";
-	vehFIATruck = "O_Truck_02_transport_F";
-	vehFIACar = "O_MRAP_02_F";
+	vehFIAArmedCar = "gm_gc_army_brdm2";
+	vehFIATruck = "gm_gc_army_ural4320_cargo";
+	vehFIACar = "gm_gc_army_btr60pa";
 	};
 
 ////////////////////////////////////
