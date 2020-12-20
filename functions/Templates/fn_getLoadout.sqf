@@ -1,17 +1,9 @@
 params ["_loadoutName"];
-
+// change dont forget
 private _basicMedicalSupplies =
 	if (hasACE) then {
 		[
-			["ACE_Tourniquet",3],
-			["ACE_SalineIV_500",1],
-			["ACE_Morphine",2],
-			["ACE_Epinephrine",2],
-			["ACE_Adenosine",2],
-			["ACE_PackingBandage",10],
-			["ACE_ElasticBandage",10],
-			["ACE_Quikclot",10],
-			["ACE_splint", 2]
+			["FirstAidKit",3]
 		]
 	} else {
 		[
@@ -34,22 +26,7 @@ private _basicMiscItems =
 private _medicSupplies =
 	if (hasACE) then {
 		[
-			["ACE_surgicalKit",1],
-
-			["ACE_PackingBandage",5],
-			["ACE_ElasticBandage",20],
-			["ACE_QuikClot",10],
-
-			["ACE_Morphine",5],
-			["ACE_Epinephrine",5],
-			["ACE_Adenosine",5],
-
-			["ACE_PlasmaIV_250",5],
-			["ACE_SalineIV_500",3],
-			["ACE_BloodIV",1],
-
-			["ACE_Tourniquet",3],
-			["ACE_Splint",4]
+			["Medikit", 1]
 		]
 	} else {
 		[
