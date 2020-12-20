@@ -4,23 +4,23 @@
 nameTeamPlayer = "FIA";
 SDKFlag = "Flag_FIA_F";
 SDKFlagTexture = "\A3\Data_F\Flags\Flag_Altis_CO.paa";
-typePetros = "I_G_officer_F";
+typePetros = "gm_ge_army_officer_p1_80_oli";
 
 ////////////////////////////////////
 //             UNITS             ///
 ////////////////////////////////////
 //First Entry is Guerilla, Second Entry is Para/Military
-staticCrewTeamPlayer = "I_G_Soldier_unarmed_F";
-SDKUnarmed = "I_G_Survivor_F";
-SDKSniper = ["I_G_Sharpshooter_F","I_ghillie_ard_F"];
-SDKATman = ["I_G_Soldier_LAT2_F","I_Soldier_LAT2_F"];
-SDKMedic = ["I_G_medic_F","I_medic_F"];
-SDKMG = ["I_G_Soldier_AR_F","I_Soldier_AR_F"];
-SDKExp = ["I_G_Soldier_exp_F","I_Soldier_exp_F"];
-SDKGL = ["I_G_Soldier_GL_F","I_Soldier_GL_F"];
-SDKMil = ["I_G_Soldier_lite_F","I_Soldier_lite_F"];
-SDKSL = ["I_G_Soldier_SL_F","I_Soldier_SL_F"];
-SDKEng = ["I_G_engineer_F","I_engineer_F"];
+staticCrewTeamPlayer = "gm_gc_civ_man_02_80_brn";
+SDKUnarmed = "gm_gc_civ_man_01_80_blu";
+SDKSniper = ["gm_ge_army_marksman_g3a3_80_ols","gm_ge_army_marksman_g3a3_80_ols"];
+SDKATman = ["gm_ge_army_antitank_g3a3_pzf84_80_ols","gm_ge_army_antitank_g3a3_pzf84_80_ols"];
+SDKMedic = ["gm_ge_army_medic_g3a3_80_ols","gm_ge_army_medic_g3a3_80_ols"];
+SDKMG = ["gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_machinegunner_mg3_80_ols"];
+SDKExp = ["gm_ge_army_demolition_g3a4_80_ols","gm_ge_army_demolition_g3a4_80_ols"];
+SDKGL = ["gm_ge_army_grenadier_g3a3_80_ols","gm_ge_army_grenadier_g3a3_80_ols"];
+SDKMil = ["gm_ge_army_engineer_g3a4_80_ols","gm_ge_army_engineer_g3a4_80_ols"];
+SDKSL = ["gm_ge_army_squadleader_g3a3_p2a1_80_ol","gm_ge_army_squadleader_g3a3_p2a1_80_ol"];
+SDKEng = ["gm_ge_army_demolition_g3a4_80_ols","gm_ge_army_demolition_g3a4_80_ols"];
 
 ////////////////////////////////////
 //            GROUPS             ///
@@ -43,19 +43,19 @@ soldiersSDK = sdkTier1 + sdkTier2 + sdkTier3;
 //           VEHICLES            ///
 ////////////////////////////////////
 //Military Vehicles
-vehSDKBike = "I_G_Quadbike_01_F";
-vehSDKLightArmed = "I_G_Offroad_01_armed_F";
-vehSDKAT = "I_G_Offroad_01_AT_F";
-vehSDKLightUnarmed = "I_G_Offroad_01_F";
-vehSDKTruck = "I_G_Van_01_transport_F";
+vehSDKBike = "gm_ge_army_k125";
+vehSDKLightArmed = "gm_ge_army_u1300l_container";
+vehSDKAT = "gm_ge_army_iltis_milan";
+vehSDKLightUnarmed = "gm_ge_army_iltis_cargo";
+vehSDKTruck = "gm_ge_army_kat1_451_container";
 //vehSDKHeli = "I_C_Heli_Light_01_civil_F";
 vehSDKPlane = "I_C_Plane_Civil_01_F";
 vehSDKBoat = "I_G_Boat_Transport_01_F";
-vehSDKRepair = "I_G_Offroad_01_repair_F";
+vehSDKRepair = "gm_ge_army_u1300l_repair";
 
 //Civilian Vehicles
-civCar = "C_Offroad_01_F";
-civTruck = "C_Van_01_transport_F";
+civCar = "gm_ge_civ_typ1200";
+civTruck = "gm_ge_civ_u1300l";
 civHeli = "C_Heli_Light_01_civil_F";
 civBoat = "C_Boat_Transport_02_F";
 
@@ -96,14 +96,14 @@ breachingExplosivesAPC = [["DemoCharge_Remote_Mag", 1]];
 breachingExplosivesTank = [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]];
 
 //Starting Unlocks
-initialRebelEquipment append ["hgun_Pistol_heavy_02_F","hgun_Pistol_heavy_01_green_F","sgun_HunterShotgun_01_F","SMG_02_F"];
-initialRebelEquipment append ["SMG_02_F"];
+initialRebelEquipment append ["gm_placeableweapon_p1_blk","gm_placeableweapon_lp1_blk","gm_placeableweapon_mp2a1_blk"];
+initialRebelEquipment append ["gm_placeableweapon_mp2a1_blk"];
 initialRebelEquipment append ["6Rnd_45ACP_Cylinder","11Rnd_45ACP_Mag","2Rnd_12Gauge_Pellets","2Rnd_12Gauge_Slug","30Rnd_9x21_Mag_SMG_02","MiniGrenade","SmokeShell"];
-initialRebelEquipment append ["B_FieldPack_blk","B_FieldPack_oucamo","B_FieldPack_cbr","B_FieldPack_oli","B_FieldPack_green_F","B_FieldPack_taiga_F"];
-initialRebelEquipment append ["V_Chestrig_blk","V_Chestrig_rgr","V_Chestrig_khk","V_Chestrig_oli","V_BandollierB_blk","V_SmershVest_01_F","V_BandollierB_rgr","V_SmershVest_01_radio_F","V_BandollierB_oli","V_Rangemaster_belt"];
-initialRebelEquipment append ["Binocular","acc_flashlight"];
+initialRebelEquipment append ["gm_gc_army_backpack_80_assaultpack_str", "gm_gc_army_backpack_satchel_80_blk"];
+initialRebelEquipment append ["gm_placeableweapon_dk_army_vest_54_crew", "gm_placeableweapon_dk_army_vest_80_crew", "gm_placeableweapon_ge_army_vest_80_belt"];
+initialRebelEquipment append ["gm_placeableitem_df7x40_blk","gm_placeableitem_ferod16_oli", "gm_placeableitem_gc_compass_f73", "gm_placeableitem_watch_kosei_80", "gm_placeableitem_repairkit_01", "gm_placeableitem_gc_army_medkit"];
 //Greenfor uniforms
-allRebelUniforms append ["U_IG_Guerilla1_1","U_IG_Guerilla2_1","U_IG_Guerilla2_2","U_IG_Guerilla2_3","U_IG_Guerilla3_1","U_IG_leader","U_IG_Guerrilla_6_1"];
+allRebelUniforms append ["gm_placeableitem_gc_army_uniform_soldier_80_blk", "gm_placeableitem_gc_army_uniform_soldier_80_oli", "gm_placeableitem_gc_army_uniform_soldier_parka_80_ols", "gm_placeableitem_gc_army_uniform_soldier_80_str", "gm_placeableitem_dk_army_soldier_84_oli", "gm_placeableitem_dk_army_soldier_84_m84","gm_placeableitem_gc_civ_uniform_man_01_80_blu"];
 //TFAR Unlocks
 if (hasTFAR) then {initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (hasTFAR && startWithLongRangeRadio) then {initialRebelEquipment pushBack "tf_anprc155"};
