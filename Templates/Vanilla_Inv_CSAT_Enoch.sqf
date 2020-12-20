@@ -2,7 +2,7 @@
 //       NAMES AND FLAGS         ///
 ////////////////////////////////////
 //Name Used for notifications
-nameInvaders = "CSAT";
+nameInvaders = "SSSR";
 
 //SF Faction
 factionMaleInvaders = "OPF_R_F";
@@ -44,19 +44,19 @@ vehCSATPVP = ["O_MRAP_02_F","O_MRAP_02_hmg_F"];
 //             UNITS             ///
 ////////////////////////////////////
 //Military Units
-CSATGrunt = "O_Soldier_F";
-CSATOfficer = "O_officer_F";
-CSATBodyG = "O_V_Soldier_hex_F";
-CSATCrew = "O_crew_F";
-CSATMarksman = "O_soldier_M_F";
-staticCrewInvaders = "O_support_MG_F";
-CSATPilot = "O_Pilot_F";
+CSATGrunt = "gm_gc_army_rifleman_mpiak74n_80_str";
+CSATOfficer = "gm_gc_army_officer_80_gry";
+CSATBodyG = "gm_pl_army_rifleman_akm_80_moro";
+CSATCrew = "gm_gc_army_crew_mpiaks74nk_80_blk";
+CSATMarksman = "gm_gc_army_marksman_svd_80_str";
+staticCrewInvaders = "gm_gc_army_machinegunner_lmgrpk_80_str";
+CSATPilot = "gm_gc_army_crew_mpiaks74nk_80_blk";
 
 //Militia Units
 if (gameMode == 4) then
 	{
-	FIARifleman = "O_soldierU_F";
-	FIAMarksman = "O_soldierU_M_F";
+	FIARifleman = "gm_gc_army_rifleman_mpiak74n_80_str";
+	FIAMarksman = "gm_gc_army_marksman_svd_80_str";
 	};
 
 ////////////////////////////////////
@@ -64,24 +64,24 @@ if (gameMode == 4) then
 ////////////////////////////////////
 //Military Groups
 //Teams
-groupsCSATSentry = ["O_Soldier_GL_F","O_Soldier_F"];
-groupsCSATSniper = ["O_sniper_F","O_spotter_F"];
-groupsCSATsmall = [groupsCSATSentry,["O_recon_M_F","O_recon_F"],groupsCSATSniper];
+groupsCSATSentry = ["gm_gc_army_demolition_mpiaks74n_80_str","gm_ge_army_rifleman_mpiak74n_80_str"];
+groupsCSATSniper = ["gm_gc_army_marksman_svd_80_str","gm_gc_army_engineer_mpiaks74n_80_str"];
+groupsCSATsmall = [groupsCSATSentry,["gm_gc_army_engineer_mpiaks74n_80_str","gm_gc_army_engineer_mpiaks74n_80_str"],groupsCSATSniper];
 //Fireteams
-groupsCSATAA = ["O_Soldier_TL_F","O_Soldier_AA_F","O_Soldier_AA_F","O_Soldier_AAA_F"];
-groupsCSATAT = ["O_Soldier_TL_F","O_Soldier_AT_F","O_Soldier_AT_F","O_Soldier_AAT_F"];
-groupsCSATmid = [["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_GL_F","O_Soldier_LAT_F"],groupsCSATAA,groupsCSATAT];
+groupsCSATAA = ["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str"];
+groupsCSATAT = ["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str"];
+groupsCSATmid = [["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_demolition_mpiaks74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str"],groupsCSATAA,groupsCSATAT];
 //Squads
-CSATSquad = ["O_Soldier_SL_F","O_Soldier_F","O_Soldier_LAT_F","O_soldier_M_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_medic_F"];
+CSATSquad = ["gm_gc_army_squadleader_mpiak74n_80_str","gm_ge_army_rifleman_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_marksman_svd_80_str","gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_rifleman_mpiak74n_80_str","gm_gc_army_medic_mpiak74n_80_str"];
 CSATSpecOp = ["O_R_recon_TL_F","O_R_recon_JTAC_F","O_R_recon_M_F","O_R_recon_exp_F","O_R_recon_LAT_F","O_R_recon_medic_F"];
 groupsCSATSquad =
 	[
 	CSATSquad,
-	["O_Soldier_SL_F","O_Soldier_AR_F","O_Soldier_GL_F","O_soldier_M_F","O_Soldier_AT_F","O_Soldier_AAT_F","O_Soldier_A_F","O_medic_F"],
-	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_LAT_F","O_medic_F"],
-	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_LAT_F","O_medic_F"],
-	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_Soldier_AA_F","O_Soldier_AAA_F","O_medic_F"],
-	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_engineer_F","O_engineer_F","O_medic_F"]
+	["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_demolition_mpiaks74n_80_str","gm_gc_army_marksman_svd_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str","gm_gc_army_rifleman_mpiak74n_80_str","gm_gc_army_medic_mpiak74n_80_str"],
+	["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_rifleman_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_medic_mpiak74n_80_str"],
+	["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_rifleman_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_medic_mpiak74n_80_str"],
+	["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_rifleman_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str","gm_gc_army_medic_mpiak74n_80_str"],
+	["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_pk_80_str","gm_gc_army_rifleman_mpiak74n_80_str","gm_gc_army_demolition_mpiak74n_80_str","gm_gc_army_demolition_mpiak74n_80_str","gm_gc_army_medic_mpiak74n_80_str"]
 	];
 
 //Militia Groups
@@ -90,23 +90,23 @@ if (gameMode == 4) then
 	//Teams
 	groupsFIASmall =
 		[
-		["O_SoldierU_GL_F",FIARifleman],
+		["gm_gc_army_machinegunner_lmgrpk_80_str",FIARifleman],
 		[FIAMarksman,FIARifleman],
-		["O_soldierU_M_F","O_SoldierU_GL_F"]
+		["gm_gc_army_marksman_svd_80_str","gm_gc_army_machinegunner_lmgrpk_80_str"]
 		];
 	//Fireteams
 	groupsFIAMid =
 		[
-		["O_SoldierU_SL_F","O_SoldierU_GL_F","O_soldierU_AR_F",FIAMarksman],
-		["O_SoldierU_SL_F","O_SoldierU_GL_F","O_soldierU_AR_F","O_soldierU_LAT_F"],
-		["O_SoldierU_SL_F","O_SoldierU_GL_F","O_soldierU_AR_F","O_engineer_U_F"]
+		["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_lmgrpk_80_str","gm_gc_army_machinegunner_assistant_lmgrpk_80_str",FIAMarksman],
+		["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_lmgrpk_80_str","gm_gc_army_machinegunner_assistant_lmgrpk_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str"],
+		["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_lmgrpk_80_str","gm_gc_army_machinegunner_assistant_lmgrpk_80_str","gm_gc_army_demolition_mpiak74n_80_str"]
 		];
 	//Squads
-	FIASquad = ["O_SoldierU_SL_F","O_soldierU_AR_F","O_SoldierU_GL_F",FIARifleman,FIARifleman,FIAMarksman,"O_soldierU_LAT_F","O_soldierU_medic_F"];
+	FIASquad = ["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_assistant_lmgrpk_80_str","gm_gc_army_machinegunner_lmgrpk_80_str",FIARifleman,FIARifleman,FIAMarksman,"gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_medic_mpiak74n_80_str"];
 	groupsFIASquad =
 		[
 		FIASquad,
-		["O_SoldierU_SL_F","O_soldierU_AR_F","O_SoldierU_GL_F",FIARifleman,"O_soldierU_A_F","O_soldierU_exp_F","O_soldierU_LAT_F","O_soldierU_medic_F"]
+		["gm_gc_army_squadleader_mpiak74n_80_str","gm_gc_army_machinegunner_assistant_lmgrpk_80_str","gm_gc_army_machinegunner_lmgrpk_80_str",FIARifleman,"gm_gc_army_engineer_mpiaks74n_80_str","gm_gc_army_demolition_mpiaks74n_80_str","gm_gc_army_antitank_mpiak74n_rpg7_80_str","gm_gc_army_medic_mpiak74n_80_str"]
 		];
 	};
 
