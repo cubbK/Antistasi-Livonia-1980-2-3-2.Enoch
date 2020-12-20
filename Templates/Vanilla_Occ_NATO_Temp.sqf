@@ -40,7 +40,7 @@ NATOPlayerLoadouts = [
 ];
 
 //PVP Player Vehicles
-vehNATOPVP = ["B_MRAP_01_F","B_MRAP_01_hmg_F","B_Quadbike_01_F"];
+vehNATOPVP = ["gm_ge_army_iltis_cargo","gm_ge_army_fuchsa0_engineer","gm_ge_army_k125"];
 
 ////////////////////////////////////
 //             UNITS             ///
@@ -127,18 +127,18 @@ groupsNATOGen = [policeOfficer,policeGrunt];
 ////////////////////////////////////
 //Military Vehicles
 //Lite
-vehNATOBike = "B_Quadbike_01_F";
-vehNATOLightArmed = ["B_MRAP_01_hmg_F"];
-vehNATOLightUnarmed = ["B_MRAP_01_F"];
-vehNATOTrucks = ["B_Truck_01_transport_F","B_Truck_01_covered_F"];
-vehNATOCargoTrucks = ["B_Truck_01_cargo_F", "B_Truck_01_flatbed_F"];
-vehNATOAmmoTruck = "B_Truck_01_ammo_F";
-vehNATORepairTruck = "B_Truck_01_Repair_F";
+vehNATOBike = "gm_ge_army_k125";
+vehNATOLightArmed = ["gm_ge_army_fuchsa0_engineer"];
+vehNATOLightUnarmed = ["gm_ge_army_iltis_cargo"];
+vehNATOTrucks = ["gm_ge_army_kat1_451_container","gm_ge_army_kat1_451_cargo"];
+vehNATOCargoTrucks = ["gm_ge_army_kat1_454_cargo", "gm_ge_army_u1300l_container"];
+vehNATOAmmoTruck = "gm_ge_army_kat1_454_reammo";
+vehNATORepairTruck = "gm_ge_army_u1300l_repair";
 vehNATOLight = vehNATOLightArmed + vehNATOLightUnarmed;
 //Armored
-vehNATOAPC = ["B_APC_Wheeled_01_cannon_F","B_APC_Tracked_01_rcws_F"];
-vehNATOTank = "B_MBT_01_cannon_F";
-vehNATOAA = "B_APC_Tracked_01_AA_F";
+vehNATOAPC = ["gm_ge_army_bpz2a0","gm_ge_army_fuchsa0_reconnaissance"];
+vehNATOTank = "gm_ge_army_Leopard1a1a1";
+vehNATOAA = "gm_ge_army_gepard1a1";
 vehNATOAttack = vehNATOAPC + [vehNATOTank];
 //Boats
 vehNATOBoat = "B_Boat_Armed_01_minigun_F";
@@ -156,7 +156,7 @@ vehNATOAttackHelis = ["B_Heli_Light_01_armed_F","B_Heli_Attack_01_F"];
 vehNATOUAV = "B_UAV_02_F";
 vehNATOUAVSmall = "B_UAV_01_F";
 //Artillery
-vehNATOMRLS = "B_MBT_01_arty_F";
+vehNATOMRLS = "gm_ge_army_Leopard1a5";
 vehNATOMRLSMags = "32Rnd_155mm_Mo_shells";
 //Combined Arrays
 vehNATONormal = vehNATOLight + vehNATOTrucks + [vehNATOAmmoTruck, "B_Truck_01_fuel_F", "B_Truck_01_medical_F", vehNATORepairTruck,"B_APC_Tracked_01_CRV_F"];
@@ -165,13 +165,13 @@ vehNATOAir = vehNATOTransportHelis + vehNATOAttackHelis + [vehNATOPlane,vehNATOP
 //Militia Vehicles
 if (gameMode != 4) then
 	{
-	vehFIAArmedCar = "B_LSV_01_armed_F";
-	vehFIATruck = "B_Truck_01_transport_F";
-	vehFIACar = "B_LSV_01_unarmed_F";
+	vehFIAArmedCar = "gm_ge_army_u1300l_container";
+	vehFIATruck = "gm_ge_army_kat1_451_container";
+	vehFIACar = "gm_ge_army_iltis_milan";
 	};
 
 //Police Vehicles
-vehPoliceCar = "B_GEN_Offroad_01_gen_F";
+vehPoliceCar = "gm_ge_pol_typ1200";
 
 ////////////////////////////////////
 //        STATIC WEAPONS         ///
